@@ -6,7 +6,11 @@
   "author": "mottox2 <y.mottox2@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@babel/preset-typescript": "^7.1.0",
     "netlify-lambda": "https://github.com/netlify/netlify-lambda.git"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.15"
   },
   "scripts": {
     "build": "netlify-lambda build src/",
