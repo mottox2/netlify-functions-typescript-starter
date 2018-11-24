@@ -1,13 +1,13 @@
 {
-  "name": "slack-hitomoji",
+  "name": "netlify-functions-typescript-starter",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/mottox2/slack-hitomoji.git",
+  "repository": "https://github.com/mottox2/netlify-functions-typescript-starter.git",
   "author": "mottox2 <y.mottox2@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@babel/preset-typescript": "^7.1.0",
-    "netlify-lambda": "https://github.com/netlify/netlify-lambda.git"
+    "netlify-lambda": "https://github.com/netlify/netlify-functions-typescript-starter.git"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.15"
