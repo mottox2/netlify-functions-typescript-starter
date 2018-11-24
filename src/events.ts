@@ -9,9 +9,24 @@ exports.handler = async (
   context: any,
   callback: APIGatewayProxyCallback
 ) => {
-  const body = JSON.parse(event.body)
+  let body = {}
+  if (event.httpMethod === 'GET') {
+    body = event.queryStringParameters
+  } else if (event.httpMethod === 'POST') {
+    body = JSON.parse(event.body)
+  }
+
+  // do something...
+
+  const response = {
+    ...body
+  }
+
   callback(null, {
     statusCode: 200,
-    body: body.challenge
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(response)
   })
 }
