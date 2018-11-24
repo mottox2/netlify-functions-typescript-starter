@@ -1,0 +1,15 @@
+{
+  "name": "slack-hitomoji",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mottox2/slack-hitomoji.git",
+  "author": "mottox2 <y.mottox2@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "netlify-lambda": "https://github.com/netlify/netlify-lambda.git"
+  },
+  "scripts": {
+    "build": "netlify-lambda build src/",
+    "serve": "netlify-lambda serve src/"
+  }
+}
