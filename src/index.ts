@@ -9,8 +9,9 @@ exports.handler = async (
   context: any,
   callback: APIGatewayProxyCallback
 ) => {
+  const body = JSON.parse(event.body)
   callback(null, {
     statusCode: 200,
-    body: ''
+    body: body.challenge
   })
 }
