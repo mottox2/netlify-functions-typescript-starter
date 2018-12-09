@@ -5,12 +5,10 @@
   "repository": "https://github.com/mottox2/netlify-functions-typescript-starter.git",
   "author": "mottox2 <y.mottox2@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "@babel/preset-typescript": "^7.1.0",
-    "netlify-lambda": "https://github.com/netlify/netlify-functions-typescript-starter.git"
-  },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.15"
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/aws-lambda": "^8.10.15",
+    "netlify-lambda": "^1.1.0"
   },
   "scripts": {
     "build": "netlify-lambda build src/",
