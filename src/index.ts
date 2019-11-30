@@ -4,7 +4,7 @@ import {
   // @ts-ignore
 } from '@types/aws-lambda'
 
-exports.handler = async (
+exports.handler = (
   event: APIGatewayProxyEvent,
   context: any,
   callback: APIGatewayProxyCallback
